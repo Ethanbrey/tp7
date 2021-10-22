@@ -31,12 +31,9 @@ function loadFileInto(fromFile, whereTo) {
 }
 
 window.onload = function() {
+  
   document.querySelector("#foodbkgd").classList.add("name");
-
-
-document.querySelector("#foodbkgd").onclick = function() {
- this.classList.toggle("name")
-}
+  
 
 document.querySelector("#ingredients").onclick = function() {
   document.querySelector("#ingredients ul").classList.toggle("showMe");
@@ -50,9 +47,13 @@ document.querySelector("#directions").onclick = function() {
   document.querySelector("#directions ol").classList.toggle("showMe");
 }
 
-loadFile("ingredients.html", "#ingredients ul");
-loadFile("epuipment.html", "#equipment ul");
-loadFile("directions.html", "#directions ol");
+document.querySelector("#foodbkgd").onclick = function() {
+ this.classList.toggle("name")
+}
+
+loadFileInto("ingredients.html", "#ingredients ul");
+loadFileInto("equipment.html", "#equipment ul");
+loadFileInto("directions.html", "#directions ol");
 }
 // end of window.onload
 
