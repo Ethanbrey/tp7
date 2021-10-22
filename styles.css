@@ -54,17 +54,17 @@ div {
   padding: 1vw;
 }
 
-#block1 {
+#ingredients {
   background-color: lightgray;
   color: red;
 }
 
-#block2 {
+#equipment {
   background-color: lightgray; 
   color: red;
 }
 
-#block3 {
+#directions {
   background-color: lightgray;
   color: red;
 }
